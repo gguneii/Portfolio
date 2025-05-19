@@ -1,22 +1,8 @@
+import HeroImage from "@/public/hero-image.png";
 export default function Home() {
   return (
-    <div>
-      <nav className="flex justify-between px-[20px] py-[13.5px] lg:px-[40px] max-w-[1512px] w-full mx-auto">
-        <a href="">
-          <img src="../logo.svg" alt="logo" />
-        </a>
-        <ul className="flex gap-[40px]">
-          <li>
-            <a href="">3d Models</a>
-          </li>
-          <li>
-            <a href="">About</a>
-          </li>
-        </ul>
-      </nav>
-
-      <main>
-     <section className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl">
+    <main>
+      <section className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl">
         <div className="flex-1 space-y-6">
           <p className="hidden text-sm text-gray-600 uppercase md:block">
             Your go-to platform for 3D printing files
@@ -25,8 +11,8 @@ export default function Home() {
             Discover what's possible with 3D Printing
           </h1>
           <p className="text-lg text-gray-600">
-            Join our community of creators and explore a vast
-            library of user-submitted models.
+            Join our community of creators and explore a vast library of
+            user-submitted models.
           </p>
 
           <div className="flex gap-4">
@@ -38,9 +24,8 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <img src="../hero-image.png" width={350} />
+        <img src={HeroImage.src} className="w-[350px]" />
       </section>
-      </main>
-    </div>
+    </main>
   );
 }
